@@ -4,8 +4,8 @@ import faiss
 import json
 
 # Load FAISS index and metadata
-index_file = "vector_index.faiss"
-metadata_file = "metadata.json"
+index_file = r"D:\Portfolio Github\Airport_Chatbot\data\vector_index.faiss"
+metadata_file = r"D:\Portfolio Github\Airport_Chatbot\data\metadata.json"
 
 index = faiss.read_index(index_file)
 with open(metadata_file, 'r', encoding='utf-8') as f:
