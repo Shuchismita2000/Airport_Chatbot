@@ -4,8 +4,8 @@ import faiss
 import json
 
 # Load FAISS index and metadata
-index_file = f"data/vector_index.faiss"
-metadata_file = f"data/metadata.json"
+index_file = "./data/vector_index.faiss"
+metadata_file = "./data/metadata.json"
 
 index = faiss.read_index(index_file)
 with open(metadata_file, 'r', encoding='utf-8') as f:
